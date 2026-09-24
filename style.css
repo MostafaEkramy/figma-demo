@@ -647,4 +647,353 @@ input::placeholder {
 
 .footer-links a:hover {
     transform: none;
-}
+}
+
+/* ========== Hamburger Menu ========== */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #4D4D4D;
+    cursor: pointer;
+    padding: 5px 10px;
+    min-width: auto;
+    transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+    background: none;
+    transform: rotate(90deg) !important;
+}
+
+/* ========== Responsive - Tablet (max-width: 768px) ========== */
+@media (max-width: 768px) {
+
+    header {
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .ull1 {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 58.76px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        gap: 10px;
+        z-index: 10;
+    }
+
+    .ull1.active {
+        display: flex;
+    }
+
+    .ull1 li {
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .sec-1 {
+        flex-direction: column;
+        height: auto;
+        padding: 100px 20px 40px;
+        text-align: center;
+    }
+
+    .sec-1 p {
+        width: 90%;
+        font-size: 30px;
+    }
+
+    .sec-1 img {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .sec-2 {
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    .sec-2 ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .sec-2 ul li img {
+        width: 80px;
+        height: auto;
+    }
+
+    .sec-3 {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .s3 {
+        font-size: 24px;
+    }
+
+    .sec-4 {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .sec-4 div {
+        width: 80%;
+        height: auto;
+        margin: 15px 0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .sec-4 div h4 {
+        font-size: 22px;
+    }
+
+    .sec-5 {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .sec-5 img {
+        width: 80%;
+        height: auto;
+    }
+
+    .sec-5 div {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .sec-6 {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .sec-6 .cont {
+        width: 90%;
+    }
+
+    .sec-6 .con6 {
+        flex-wrap: wrap;
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .sec-7 {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .sec-7 img {
+        width: 80%;
+        height: auto;
+    }
+
+    .sec-7 div {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .sec-8 {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .sec-8 .cont8 {
+        width: 90%;
+        height: auto;
+    }
+
+    .sec-8 .im8 img {
+        width: 80%;
+        height: auto;
+    }
+
+    .logo8 {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .cont9 {
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .cont9 p {
+        width: 90%;
+    }
+
+    .sec-10 {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 80px;
+        margin-bottom: 80px;
+    }
+
+    .z1, .z2, .z3 {
+        width: 80%;
+        height: auto;
+    }
+
+    .sec-10 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bc1, .bc2, .bc3 {
+        position: relative;
+        width: 90%;
+        transform: translateY(0);
+    }
+
+    .last {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .last h1 {
+        width: 90%;
+        font-size: 32px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    footer .c {
+        width: 90%;
+        height: auto;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .links1, .links2, .links3 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ========== Responsive - Mobile (max-width: 480px) ========== */
+@media (max-width: 480px) {
+
+    .sec-1 p {
+        font-size: 24px;
+        width: 95%;
+    }
+
+    .sec-1 img {
+        width: 95%;
+    }
+
+    .s2 {
+        font-size: 22px;
+    }
+
+    .s3 {
+        font-size: 20px;
+    }
+
+    .sec-4 div {
+        width: 95%;
+    }
+
+    .sec-4 div h4 {
+        font-size: 18px;
+    }
+
+    .sec-5 img,
+    .sec-7 img {
+        width: 95%;
+    }
+
+    .sec-5 div,
+    .sec-7 div {
+        width: 95%;
+    }
+
+    .sec-5 div h4,
+    .sec-7 div h4 {
+        font-size: 22px;
+    }
+
+    .sec-6 .cont h3 {
+        font-size: 24px;
+    }
+
+    .sec-8 .cont8 {
+        width: 95%;
+    }
+
+    .sec-8 .im8 img {
+        width: 95%;
+    }
+
+    .cont9 h3 {
+        font-size: 22px;
+    }
+
+    .z1, .z2, .z3 {
+        width: 95%;
+    }
+
+    .last h1 {
+        font-size: 26px;
+        width: 95%;
+    }
+
+    .last button {
+        transform: scale(1);
+    }
+
+    .last button:hover {
+        transform: scale(1.1);
+    }
+
+    footer .c {
+        width: 95%;
+    }
+
+    .footer-links {
+        width: 95%;
+    }
+
+    .c1 h6 {
+        font-size: 24px;
+    }
+}
+
